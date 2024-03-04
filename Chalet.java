@@ -9,6 +9,9 @@ public class Chalet extends Casa{
         this.colorvalla = colorvalla;
         this.mantener = mantener;
     }
+    public Chalet(){
+
+    }
     public void aumentaMantener(){
         setMantener(this.mantener*1.02);
     }
@@ -42,4 +45,8 @@ public class Chalet extends Casa{
     public void mostrarDatos(){
         System.out.println("El chalet tiene "+getnPuertas()+" puertas, es de color "+getColor()+", tiene "+getnVentanas()+" ventanas y "+getmJardin()+" m2 de jardín. El coste de mantenimiento es "+getMantener());
     }
+    public String toString(){
+        return getClass().getName()+ " - "+this.getColor();
+    }
+
 }

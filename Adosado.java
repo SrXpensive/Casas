@@ -7,6 +7,9 @@ public class Adosado extends Casa{
         this.pati = pati;
         this.nCocheres = nCocheres;
     }
+    public Adosado(){
+
+    }
 
     public boolean isPati() {
         return pati;
@@ -31,5 +34,8 @@ public class Adosado extends Casa{
             pati = "tiene";
         }
         System.out.println("El adosado tiene "+getnPuertas()+" puertas, es de color "+getColor()+", tiene "+getnVentanas()+" ventanas y "+pati+" patio");
+    }
+    public String toString(){
+        return getClass().getName()+" - "+this.getColor();
     }
 }

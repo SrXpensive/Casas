@@ -50,4 +50,7 @@ public class Casa {
     public void mostrarDatos(){
         System.out.println("La casa tiene "+getnPuertas()+" puertas, es de color "+getColor()+" y "+getnVentanas()+" ventanas");
     }
+    public String toString(){
+        return getClass().getName()+" - "+ this.color;
+    }
 }

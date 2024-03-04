@@ -7,6 +7,9 @@ public class Piso extends Casa{
         this.nPlanta = nPlanta;
         this.balcones = balcones;
     }
+    public Piso(){
+
+    }
 
     public int getnPlanta() {
         return nPlanta;
@@ -25,5 +28,8 @@ public class Piso extends Casa{
     }
     public void mostrarDatos(){
         System.out.println("El piso tiene "+getnPuertas()+", es de color "+getColor()+", tiene "+getnVentanas()+" ventanas y "+getBalcones()+" balcones");
+    }
+    public String toString(){
+        return getClass().getName()+" - "+this.getColor();
     }
 }
